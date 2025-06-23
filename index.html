@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mis 15</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></head>
+<body>
+  <!-- nav -->
+  <nav class="nav">
+    <div class="nav-container">
+      <div class="logo">G</div>
+      <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+      <ul class="nav-menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#cuenta">Cuenta Regresiva</a></li>
+        <li><a href="#fiesta">Fiesta</a></li>
+        <li><a href="#confirmacion">Confirmación</a></li>
+        <li><a href="#regalo">Regalo</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- inicio de la pagina -->
+  <section id="inicio"><br><br><br><br><br><br>
+    <h1>¡Bienvenidos a mis 15!</h1><br><br><br>
+    <p>Esta será una noche inolvidable. Deslizá para ver más ↓</p>
+  </section>
+
+  <section id="cuenta">
+    <h1>Cuenta regresiva</h1><br><br>
+    <div class="contador-container">
+      <div class="mensaje">¡Te espero para festejar este gran momento de mi vida! </div>
+      <div class="contador" id="contador">
+        <div><span id="dias">0</span><span class="label">días</span></div>
+        <div><span id="horas">0</span><span class="label">hs</span></div>
+        <div><span id="minutos">0</span><span class="label">min</span></div>
+        <div><span id="segundos">0</span><span class="label">seg</span></div>
+      </div>
+    </div>
+    </section>
+
+  <section id="fiesta" class="fiesta" >
+
+   <!-- Informacion relevante -->
+
+    <br><br><br><br>
+    
+    <div class="info-conteiner">
+      <h2>¡Estás invitado a mi fiesta de 15!</h2><br><br>
+      <p><strong>Fecha:</strong> 1 de noviembre de 2025</p><br>
+      <p><strong>Hora:</strong> 21:00 hs</p><br>
+      <p><strong>Lugar:</strong> <a href="https://maps.app.goo.gl/h4r4h187A8pT896h9" target="_blank">Salón de Fiestas - Ver ubicación</a></p>
+    </div>
+  </section>
+  
+   <!-- recomendacion de mu7sica -->
+
+  <main>
+    <section id="playlist" class="playlist-section"> <br><br><br>
+      <div class="icono-musical"><i class="fa-solid fa-music"></i></div><br><br>
+      <h2>¡PLAYLIST!</h2><br><br>
+      <p>¡Ayudame sugiriendo las canciones que pensás que no pueden faltar en la fiesta!</p><br><br><br>
+      <form id="formularioCancion">
+        <input type="email" id="correo" placeholder="Tu correo electrónico" required>
+        <input type="text" id="nombreCancion" placeholder="Nombre de la canción" required>
+        <button type="submit">SUGERIR CANCIÓN</button>
+        <div id="mensajeError" class="mensaje-error"></div>
+      </form>
+      <div id="resultado"></div>
+    </section>
+  </main>
+
+   <!-- Confirmacion de asistencia en construccion -->
+
+  <section id="confirmacion">
+    <div class="asistencia-container">
+      <div class="titulo">&#161;Confirmacion de asistencia!</div>
+      <p>Por favor, confirmá tu asistencia antes del 13/08/2025</p><br><br>
+      <div class="descripcion">Cuento con tu presencia!</div>
+      <a href="index.html" target="_blank" class="boton-sugerir">CONFIRMAR ASISTENCIA</a>
+    </div>
+  </section>
+
+  
+   <!-- regalo virtual -->
+
+  <section id="regalo">
+    <section class="regalo">
+      <div class="icono"><i class="fa-solid fa-gift"></i></div>
+      <p class="mensaje">
+        El mejor regalo es que vengas, <br>
+        pero si deseás regalarme algo, podés <br>
+        colaborar con mis sueños y anhelos✨ <br>
+        ¡Muchas gracias!
+      </p>
+      <button class="boton">HACER UN REGALO</button>
+    </section>
+  </section>
+  <!-- agradecimiento final -->
+  <section class="agradecimiento" id="agradecimiento">
+    <p>¡Gracias por acompañarme en este momento tan importante!</p>
+  </section>
+  <script src="js/contador.js"></script>
+  <script src="script.js"></script>
+  
+</body>
+</html>
